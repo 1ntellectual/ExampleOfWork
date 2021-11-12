@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sayt_7.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="wow.min.js"></script>
+  <script>
+    new WOW().init();
+    </script>
+    <title>sayt</title>
+</head>
+<body>
+
+
+
+    
+
+    <div class="block_1 bg-image">
+        <div id="container_1" class="container-fluid bg-image row gx-0">
+            <div class="contain bg-image row gx-0">
+            <div class="header row gx-0">
+                <div class="left_h_part">
+                    <div class="logo_block">
+                        <div class="img_logo"><a href="" class="img_logo"><img src="img/logo.png" alt=""></a></div>
+                        <div class="text_nft"><a href="" class="text_nft">NFT.Ring</a></div>
+                    </div>
+                    <div class="block_with_link">
+                        <div class="link_header"><a href="" class="link_header">Market</a></div>
+                        <div class="link_header"><a href="" class="link_header">Activity</a></div>
+                        <div class="link_header"><a href="" class="link_header">Feature</a></div>
+                        <div class="link_header"><a href="" class="link_header">Community</a></div>
+                    </div>
+                </div>
+                <button class="right_h_button">Login</button>
+                <div class="menu_block">
+                    <button class="menu_icon">
+                        <div class="line_1"></div>
+                        <div class="line_2"></div>
+                        <div class="line_3"></div>
+                    </button>
+                    <div class="block_for_menu">
+                        <div class="item"><div class="link_header_"><a href="" class="link_header_">Market</a></div></div>
+                        <div class="item"><div class="link_header_"><a href="" class="link_header_">Activity</a></div></div>
+                        <div class="item"><div class="link_header_"><a href="" class="link_header_">Feature</a></div></div>
+                        <div class="item"><div class="link_header_"><a href="" class="link_header_">Community</a></div></div>
+                        <div class="item_butt"><button class="right_h_butto_menu">Login</button></div>
+                    </div>
+                </div>
+                 <script src="anime.min.js"></script>  
+                <script>
+                    num = 1
+                    let line = document.querySelector('.line_3')
+                    const btnt = document.querySelector('.menu_icon')
+                    let bfm = document.querySelector('.block_for_menu')
+                    btnt.addEventListener('click', function(){
+                        num += 1
+                        if(num % 2 == 0){
+                            anime({
+                        targets: '.line_1',
+                        translateX: -2,
+                        translateY: 2,
+                        width:55,
+                        margin: 0,
+                        rotate: '45deg'
+                        });
+                        anime({
+                        targets: '.line_2',
+                        translateX: -2,
+                        translateY: -2,
+                        width:55,
+                        margin: 0,
+                        rotate: '-45deg',
+                        });
+                        anime({
+                            targets: '.block_for_menu',
+                            width: 320,
+                            height:1100,
+                            easing: 'easeInOutQuad',
+                          });
+                        line.style.cssText = 'display: none;'
+                        bfm.style.cssText = 'display: block'
+                        }else{
+                            anime({
+                        targets: '.line_1',
+                        translateX: 0,
+                        translateY: 0,
+                        width: 35,
+                        marginLeft: 8,
+                        marginTop:7,
+                        rotate: '0deg'
+                        });
+                        anime({
+                        targets: '.line_2',
+                        translateX: 0,
+                        translateY: 0,
+                        width:35,
+                        rotate: '180deg',
+                        marginLeft: 8,
+                        marginTop:7,
+                        });
+                        anime({
+                            targets: '.block_for_menu',
+                            width: 0,
+                            height:0,
+                            easing: 'easeInOutQuad',
+                          });
+    
+                        line.style.cssText = 'display: block;'
+                }         
+    
+                num_1 = 1
+                let butt = document.querySelector('.right_h_butto_menu')
+                butt.addEventListener('click', function(){
+                    num_1 += 1
+                    if(num_1 % 2 == 0){
+                        butt.style.cssText = 'background: none; border: 1px solid #FF8E1E;'
+                    }else{
+                        butt.style.cssText = 'background: opacity;'
+                    }
+                })
+    })
+    
+                </script>
+            
+                <style>
+                    *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+    
+            body{
+                overflow-y: hidden;
+            }
+            
+            
+            .menu_block{
+                margin: 0;
+                display:flex;
+                width: auto;
+                min-height:50px;
+                position:absolute;
+                right:0;
+            
+            
+            }
+            
+                .menu_icon{
+                    border:0;
+                    min-width:50px;
+                    max-height:50px;
+                    background-color: black;
+                }
+            
+                .block_for_menu{
+                    display:none;
+                    width:0px;
+                    height:0px;
+                    background-color: black;
+                    transition: display 1s ease;
+                }
+            
+                .line_1, .line_2, .line_3{
+                    width:35px;
+                    height:5px;
+                    margin: 7px auto;
+                    background-color: white;
+                    transition: all 0.1s ease;
+                }
+                .item{
+                    margin:30px auto;
+                    max-width:112px;
+                    height:48px;
+                    border: 1px solid white;
+                    border-radius:5px;
+                }
+                .item_butt{
+                    margin:25px auto;
+                    max-width:112px;
+                    height:48px;
+                }
+    
+                .link_header_{
+                    padding-top:10px;
+                    text-align:center;
+                    font-family: 'Montserrat', sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 175.4%;
+                    letter-spacing: 0.02em;
+                    color: #F4F4F4;
+                }
+
+                .link_header_:hover{
+                color:lightblue;
+    }
+    
+                    .right_h_butto_menu{
+                        transition: background-color 0.6s ease;
+                        border:0;
+                        width:112px;
+                        height:48px;
+                        background-color: #ba5a00;
+                        box-shadow: 15px 15px 35px rgba(226, 142, 15, 0.18);
+                        border-radius: 10px;
+                        font-family:'Montserrat', sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 175.4%;
+                        letter-spacing: 0.02em;
+                        color: #F4F4F4;
+                        background-repeat: no-repeat;
+                }
+                </style>
+            </div>
+            <div data-wow-duration = '1.4s' class="text_the_home animate__animated animate__fadeInTopLeft wow">The Home of
+                Minimalist Buying
+                and Selling</div>
+            <div class="down_block_1 row gx-0">
+                <div class="col-lg-6">
+                    <div data-wow-delay = "0.2s" data-wow-duration = '1.3s' class="text_this_net_first animate__animated animate__fadeInBottomLeft wow">This NFT website is a website that features buying and selling, news and blogs. Designed with a minimalist and informative concept</div>
+                <div data-wow-delay = "0.4s" data-wow-duration = '1.5s' class="block_for_two_butt animate__animated animate__backInUp wow">
+                    <button class="doble_butt">Explore</button>
+                    <button class="doble_butt">Create</button>
+            </div>
+                </div>
+                <div class="col-lg-6 small">
+                    <div data-wow-delay = "0.6s" data-wow-duration = '1.5s' class="right_blue_block animate__animated animate__fadeInRight wow">
+                        <div class="text_current">Current price</div>
+                        <div class="eph_block">
+                            <img src="img/eph.png" alt="" style = "width: 21px;">
+                            <div class="text_98">1.98</div>
+                            <div class="text_price">($5,822.47)</div>
+                        </div>
+                        <div class="name_down_block">
+                            <img src="img/name.png" alt="" style = "width:42px; height: 42px;">
+                            <div class="text_wade">Wade Warren</div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+            <div class="block_2">
+                <div id="container_2" class="container-fluid row gx-0">
+                    <div class="text_new_gener animate__animated animate__slideInDown wow">New Generation of
+                        Online Shopping</div>
+                        <div class="text_this_net animate__animated animate__slideInDown wow">This NFT website is a website that features buying and selling, news and blogs. Designed with a minimalist and informative concept</div>
+                        <div class="down_block_2 row gx-0">
+                            <div class="four_down_block row gx-0">
+                                <div data-wow-duration = '1.2s' data-wow-delay = "0.3s" class="col-lg-6 animate__animated animate__fadeInLeftBig wow">
+                                    <div class="ring_block ring_green">
+                                        <img src="img/ball_1.png" alt="" style = "max-height: 330px;">
+                                        <div class="text_color">Green Ring</div>
+                                    </div>
+                                    </div>
+                                    <div data-wow-duration = '1.2s' data-wow-delay = "0.3s" class="col-lg-6 animate__animated animate__zoomInUp wow">
+                                    <div class="ring_block ring_red">
+                                        <img src="img/ball_2.png" alt="" style = "max-height: 330px;">
+                                        <div class="text_color">Red Ring</div>
+                                    </div>
+
+                                </div>
+                                <div data-wow-duration = '1.2s' data-wow-delay = "0.3s" class="col-lg-6 animate__animated animate__zoomInUp wow">
+                                    <div class="ring_block ring_purpule">
+                                        <img src="img/ball_3.png" alt="" style = "max-height: 330px;">
+                                        <div class="text_color">Purpule Ring</div>
+                                    </div>
+                                    </div>
+                                    <div data-wow-duration = '1.2s' data-wow-delay = "0.3s" class="col-lg-6 animate__animated animate__fadeInRightBig wow">
+                                    <div class="ring_block ring_blue">
+                                        <img src="img/ball_4.png" alt="" style = "max-height: 330px;">
+                                        <div class="text_color">Blue Ring</div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="block_3">
+                <div id="container_3" class="container-fluid">
+                    <div class="text_exlusive animate__animated animate__slideInDown wow">Exclusive NFT.Ring drops</div>
+                    <div class="text_this_net animate__animated animate__slideInDown wow">This NFT website is a website that features buying and selling, news and blogs. Designed with a minimalist and informative concept</div>
+                    <div class="doble_offer_contain row gx-0">
+                        <div data-wow-duration = '1.2s' data-wow-delay = "0.1s" class="offer_block animate__animated animate__fadeIn wow">
+                            <img src="img/eth_image_1.png" alt="" style = "max-width: 310px; height: auto;">
+                            <div class="text_prod_name">Theresa Webb</div>
+                            <div class="price_block">
+                                <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                <div class="text_price">$475.22</div>
+                            </div>
+                            <div class="block_people_name">
+                                <img src="img/icon_person_1.png" alt="" style = "max-width: 42px; height: 42px;">
+                                <div class="text_name_person">Darrell Steward</div>
+                            </div>
+                        </div>
+                        <div data-wow-duration = '1.2s' data-wow-delay = "0.3s" class="offer_block animate__animated animate__fadeIn wow">
+                            <img src="img/eth_image_2.png" alt="" style = "max-width: 310px; height: auto;">
+                            <div class="text_prod_name">Eleanor Pena</div>
+                            <div class="price_block">
+                                <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                <div class="text_price">$710.68</div>
+                            </div>
+                            <div class="block_people_name">
+                                <img src="img/icon_person_7.png" alt="" style = "max-width: 42px; height: 42px;">
+                                <div class="text_name_person">Darrell Steward</div>
+                            </div>
+                        </div>
+                        <div data-wow-duration = '1.2s' data-wow-delay = "0.5s" class="offer_block animate__animated animate__fadeIn wow">
+                            <img src="img/eth_image_3.png" alt="" style = "max-width: 310px; height: auto;">
+                            <div class="text_prod_name">Darlene Robertson</div>
+                            <div class="price_block">
+                                <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                <div class="text_price">$928.41</div>
+                            </div>
+                            <div class="block_people_name">
+                                <img src="img/icon_person_3.png" alt="" style = "max-width: 42px; height: 42px;">
+                                <div class="text_name_person">Darrell Steward</div>
+                            </div>
+                        </div>
+                        <div data-wow-duration = '1.2s' data-wow-delay = "0.7s" class="offer_block animate__animated animate__fadeIn wow">
+                            <img src="img/eth_image_4.png" alt="" style = "max-width: 310px; height: auto;">
+                            <div class="text_prod_name">Bessie Cooper</div>
+                            <div class="price_block">
+                                <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                <div class="text_price">$778.35</div>
+                            </div>
+                            <div class="block_people_name">
+                                <img src="img/icon_person_4.png" alt="" style = "max-width: 42px; height: 42px;">
+                                <div class="text_name_person">Darrell Steward</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doble_offer_contain row gx-0">
+                        <div data-wow-duration = '1.2s' data-wow-delay = "1.5s" class="offer_block animate__animated animate__fadeIn wow">
+                            <img src="img/eth_image_5.png" alt="" style = "max-width: 310px; height: auto;">
+                            <div class="text_prod_name">Guy Hawkins</div>
+                            <div class="price_block">
+                                <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                <div class="text_price">$739.65</div>
+                            </div>
+                            <div class="block_people_name">
+                                <img src="img/icon_person_5.png" alt="" style = "max-width: 42px; height: 42px;">
+                                <div class="text_name_person">Darrell Steward</div>
+                            </div>
+                        </div>
+                        <div data-wow-duration = '1.2s' data-wow-delay = "1.3s" class="offer_block animate__animated animate__fadeIn wow">
+                            <img src="img/eth_image_6.png" alt="" style = "max-width: 310px; height: auto;">
+                            <div class="text_prod_name">Savannah Nguyen</div>
+                            <div class="price_block">
+                                <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                <div class="text_price">$105.55</div>
+                            </div>
+                            <div class="block_people_name">
+                                <img src="img/icon_person_6.png" alt="" style = "max-width: 42px; height: 42px;">
+                                <div class="text_name_person">Darrell Steward</div>
+                            </div>
+                        </div>
+                        <div data-wow-duration = '1.2s' data-wow-delay = "1.1s" class="offer_block animate__animated animate__fadeIn wow">
+                            <img src="img/eth_image_7.png" alt="" style = "max-width: 310px; height: auto;">
+                            <div class="text_prod_name">Wade Warren</div>
+                            <div class="price_block">
+                                <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                <div class="text_price">$396.84</div>
+                            </div>
+                            <div class="block_people_name">
+                                <img src="img/icon_person_7.png" alt="" style = "max-width: 42px; height: 42px;">
+                                <div class="text_name_person">Darrell Steward</div>
+                            </div>
+                        </div>
+                        <div data-wow-duration = '1.2s' data-wow-delay = "0.9s" class="offer_block animate__animated animate__fadeIn wow">
+                            <img src="img/eth_image_8.png" alt="" style = "max-width: 310px; height: auto;">
+                            <div class="text_prod_name">Devon Lane</div>
+                            <div class="price_block">
+                                <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                <div class="text_price">$928.41</div>
+                            </div>
+                            <div class="block_people_name">
+                                <img src="img/icon_person_1.png" alt="" style = "max-width: 42px; height: 42px;">
+                                <div class="text_name_person">Darrell Steward</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-carousel animate__animated animate__zoomInDown wow">
+                        <div class="carousel-slides">
+                            <div class="btn-L-slider"></div>
+                            <div class="btn-R-slider"></div>
+                            <div class="container-items-carousel">
+                                <div class="carousel-img carousel-el-active">
+                                    <div class="offer_block">
+                                        <img src="img/eth_image_1.png" alt="" style = "max-width: 310px; height: auto;">
+                                        <div class="text_prod_name">Theresa Webb</div>
+                                        <div class="price_block">
+                                            <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                            <div class="text_price">$475.22</div>
+                                        </div>
+                                        <div class="block_people_name">
+                                            <img src="img/icon_person_1.png" alt="" style = "max-width: 42px; height: 42px;">
+                                            <div class="text_name_person">Darrell Steward</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-img">
+                                    <div class="offer_block">
+                                        <img src="img/eth_image_2.png" alt="" style = "max-width: 310px; height: auto;">
+                                        <div class="text_prod_name">Eleanor Pena</div>
+                                        <div class="price_block">
+                                            <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                            <div class="text_price">$710.68</div>
+                                        </div>
+                                        <div class="block_people_name">
+                                            <img src="img/icon_person_7.png" alt="" style = "max-width: 42px; height: 42px;">
+                                            <div class="text_name_person">Darrell Steward</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-img">
+                                    <div class="offer_block">
+                                        <img src="img/eth_image_3.png" alt="" style = "max-width: 310px; height: auto;">
+                                        <div class="text_prod_name">Darlene Robertson</div>
+                                        <div class="price_block">
+                                            <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                            <div class="text_price">$928.41</div>
+                                        </div>
+                                        <div class="block_people_name">
+                                            <img src="img/icon_person_3.png" alt="" style = "max-width: 42px; height: 42px;">
+                                            <div class="text_name_person">Darrell Steward</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-img">
+                                    <div class="offer_block">
+                                        <img src="img/eth_image_4.png" alt="" style = "max-width: 310px; height: auto;">
+                                        <div class="text_prod_name">Bessie Cooper</div>
+                                        <div class="price_block">
+                                            <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                            <div class="text_price">$778.35</div>
+                                        </div>
+                                        <div class="block_people_name">
+                                            <img src="img/icon_person_4.png" alt="" style = "max-width: 42px; height: 42px;">
+                                            <div class="text_name_person">Darrell Steward</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-img">
+                                    <div class="offer_block">
+                                        <img src="img/eth_image_5.png" alt="" style = "max-width: 310px; height: auto;">
+                                        <div class="text_prod_name">Guy Hawkins</div>
+                                        <div class="price_block">
+                                            <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                            <div class="text_price">$739.65</div>
+                                        </div>
+                                        <div class="block_people_name">
+                                            <img src="img/icon_person_5.png" alt="" style = "max-width: 42px; height: 42px;">
+                                            <div class="text_name_person">Darrell Steward</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-img">
+                                    <div class="offer_block">
+                                        <img src="img/eth_image_6.png" alt="" style = "max-width: 310px; height: auto;">
+                                        <div class="text_prod_name">Savannah Nguyen</div>
+                                        <div class="price_block">
+                                            <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                            <div class="text_price">$105.55</div>
+                                        </div>
+                                        <div class="block_people_name">
+                                            <img src="img/icon_person_6.png" alt="" style = "max-width: 42px; height: 42px;">
+                                            <div class="text_name_person">Darrell Steward</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-img">
+                                    <div class="offer_block">
+                                        <img src="img/eth_image_7.png" alt="" style = "max-width: 310px; height: auto;">
+                                        <div class="text_prod_name">Wade Warren</div>
+                                        <div class="price_block">
+                                            <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                            <div class="text_price">$396.84</div>
+                                        </div>
+                                        <div class="block_people_name">
+                                            <img src="img/icon_person_7.png" alt="" style = "max-width: 42px; height: 42px;">
+                                            <div class="text_name_person">Darrell Steward</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-img">
+                                    <div class="offer_block">
+                                        <img src="img/eth_image_8.png" alt="" style = "max-width: 310px; height: auto;">
+                                        <div class="text_prod_name">Devon Lane</div>
+                                        <div class="price_block">
+                                            <img src="img/ether.png" alt="" style = "max-width: 15px; height: 25px; margin-top: 7px;">
+                                            <div class="text_price">$928.41</div>
+                                        </div>
+                                        <div class="block_people_name">
+                                            <img src="img/icon_person_1.png" alt="" style = "max-width: 42px; height: 42px;">
+                                            <div class="text_name_person">Darrell Steward</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-dots">
+                            <span class="carousel-dot carousel-el-active" onclick="change_classes_btn(0);"></span>
+                            <span class="carousel-dot" 					  onclick="change_classes_btn(1);"></span>
+                            <span class="carousel-dot"                    onclick="change_classes_btn(2);"></span>
+                            <span class="carousel-dot"                    onclick="change_classes_btn(3);"></span>
+                            <span class="carousel-dot"                    onclick="change_classes_btn(4);"></span>
+                            <span class="carousel-dot"                    onclick="change_classes_btn(5);"></span>
+                            <span class="carousel-dot"                    onclick="change_classes_btn(6);"></span>
+                            <span class="carousel-dot"                    onclick="change_classes_btn(7);"></span>
+                            <span class="carousel-dot"                    onclick="change_classes_btn(8);"></span>
+                            
+                        </div>
+                    </div>
+                
+                    <style>
+                    .container-carousel { 
+                        display:none;
+                        margin:50px auto;
+                        max-width: 600px;
+                        flex-direction: column;
+                    }
+
+                    @media screen and (max-width:1270px) {
+                        .container-carousel{
+                            display:flex;
+                        }
+                    }
+
+                    .btn-L-slider {
+                        width: 30px;
+                        height: 100%;
+                        background-color: #bebebe;
+                        position: absolute;
+                        left: 0;
+                        opacity: 0.3;
+                        transition: all 0.5s ease 0s;
+
+                    }
+
+                    .btn-R-slider {
+                        width: 30px;
+                        height: 100%;
+                        background-color: #bebebe;
+                        position: absolute;
+                        right: 0;
+                        opacity: 0.3;
+                        transition: all 0.5s ease 0s;
+                    }
+
+                    .btn-L-slider:hover {
+                        width: 20%;
+                        opacity: 0.1;
+
+                    }
+
+                    .btn-R-slider:hover {
+                        width: 20%;
+                        opacity: 0.1;
+
+                    }
+
+                    .carousel-dots {
+                        height: 10px;
+                        margin: 10px auto;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .carousel-dot:hover {
+                        background: #343434;
+                        transition: all 0.2s ease 0s;
+                        transform: scale(1.5);
+                    }
+
+
+
+                    .carousel-dot {
+                        width: 10px;
+                        height: 10px;
+                        padding: 0;
+                        margin-right: 10px;
+                        border: none;
+                        border-radius: 100%;
+                        background-color: #9C9C9C;
+                    }
+
+
+
+                    /* !position! */
+                    .carousel-slides {
+                        display: block;
+                        position: relative;
+                    }
+
+                    .carousel-img {
+                        width: 100%;
+                        display: none;
+                    }
+
+                    .carousel-img img{
+                        display: block;
+                        width: 100%;
+                    }
+
+                    .carousel-el-active {
+                        display: block;
+                        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(2,9,41,1) 100%);
+                        transition: all 0.4s ease 0s;
+                    }
+
+
+                    .carousel-dot:last-child {
+                        margin: 0px;
+                    }
+                    </style>
+                
+                
+                    <script>
+                            const btn_R = document.querySelector('.btn-R-slider')
+                            const btn_L = document.querySelector('.btn-L-slider')
+
+                            const all_el_slider = document.querySelectorAll('.container-items-carousel > div');
+                            const all_dot_slider = document.querySelectorAll('.carousel-dots > span');
+
+                            let index_el_slider_add = 0;
+                            let index_el_slider_del = 0;
+
+                            function counter_el_slider(way) {
+                                // |plus one| or |minus one|
+                                index_el_slider_add = way;
+                                
+                                if (index_el_slider_add === (all_el_slider.length)) {
+                                    index_el_slider_add = 0;
+                                }
+                                else if (index_el_slider_add === -1) {
+                                    index_el_slider_add = all_el_slider.length - 1;
+                                }
+                                return index_el_slider_add;
+                            }
+
+                            function change_classes (index) {
+                                all_el_slider[index_el_slider_del].classList.remove('carousel-el-active');
+                                all_el_slider[index].classList.add('carousel-el-active');
+
+                                all_dot_slider[index_el_slider_del].classList.remove('carousel-el-active');
+                                all_dot_slider[index].classList.add('carousel-el-active');
+                                index_el_slider_del = index_el_slider_add;
+                            }
+
+                            function change_classes_way(way) {
+                                change_classes(counter_el_slider(index_el_slider_add + (1 * way)));
+                            }
+
+                            function change_classes_btn(index) {
+                                change_classes (counter_el_slider(index))
+                            }
+
+                            btn_R.addEventListener('click', function () {
+                                change_classes_way(1)
+                            });
+                            btn_L.addEventListener('click', function () {
+                                change_classes_way(-1)
+                            });
+                    </script>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="block_4">
+                <div id="container_4" class="container-fluid">
+                    <div class="text_now_with animate__animated animate__slideInDown wow">Now With More News and Blogs</div>
+                    <div class="text_this_net animate__animated animate__slideInDown wow">This NFT website is a website that features buying and selling, news and blogs. Designed with a minimalist and informative concept</div>
+                    <div id="carouselExampleIndicators" class="carousel slide  animate__animated animate__zoomInDown wow" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/image_for_slide_1.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/image_for_slide_2.png"s class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/image_for_slide_3.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/image_for_slide_4.png" class="d-block w-100" alt="...">
+                          </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">  
+                        </button>
+                      </div>
+                </div>
+            </div>
+
+            
+
+
+            <div class="block_5">
+                <div id="container_5" class="cotainer-fluid">
+                    <div class="text_browse animate__animated animate__slideInDown wow">Browse by category</div>
+                    <div class="text_this_net animate__animated animate__slideInDown wow">This NFT website is a website that features buying and selling, news and blogs. Designed with a minimalist and informative concept</div>
+                    <div class="four_contin_for_image row gx-0">
+                        <img src="img/galliry_img_1.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_2.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "1.6s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_3.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "1.6s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_4.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0s" class="galliry_img animate__animated animate__fadeIn wow">
+                    </div>
+                    <div class="four_contin_for_image row gx-0">
+                        <img src="img/galliry_img_5.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0.2s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_6.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "1.4s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_7.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "1.4s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_8.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0.2s" class="galliry_img animate__animated animate__fadeIn wow">
+                    </div>
+                    <div class="four_contin_for_image row gx-0">
+                        <img src="img/galliry_img_9.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0.4s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_10.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "1.2s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_11.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "1.2s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_12.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0.4s" class="galliry_img animate__animated animate__fadeIn wow">
+                    </div>
+                    <div class="four_contin_for_image row gx-0">
+                        <img src="img/galliry_img_13.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0.6s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_14.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "1s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_15.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "1s" class="galliry_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_16.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0.6s" class="galliry_img animate__animated animate__fadeIn wow">
+                    </div>
+                    <div class="galliry_block">
+                <div class="text_galliry">Gallery of paintings</div>
+                <div class="galliry_body">
+                    <div class="part_g_">
+                        <img src="img/galliry_img_1.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0.4s" class="gall_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_2.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0.4s" class="gall_img animate__animated animate__fadeIn wow">
+                    </div>
+                    <div class="part_g_">
+                        <img src="img/galliry_img_3.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0.4s" class="gall_img animate__animated animate__fadeIn wow">
+                        <img src="img/galliry_img_4.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0.4s" class="gall_img animate__animated animate__fadeIn wow">
+                    </div>
+                    <div class="hidden_part">
+                        <div class="part_g">
+                            <img src="img/galliry_img_5.png" alt="" class="gall_img">
+                            <img src="img/galliry_img_6.png" alt="" class="gall_img">
+                        </div>
+                        <div class="part_g">
+                            <img src="img/galliry_img_7.png" alt="" class="gall_img">
+                            <img src="img/galliry_img_8.png" alt="" class="gall_img">
+                        </div>
+                        <div class="part_g">
+                            <img src="img/galliry_img_9.png" alt="" class="gall_img">
+                            <img src="img/galliry_img_10.png" alt="" class="gall_img">
+                        </div>
+                        <div class="part_g">
+                            <img src="img/galliry_img_11.png" alt="" class="gall_img">
+                            <img src="img/galliry_img_12.png" alt="" class="gall_img">
+                        </div>
+                        <div class="part_g">
+                            <img src="img/galliry_img_13.png" alt="" class="gall_img">
+                            <img src="img/galliry_img_14.png" alt="" class="gall_img">
+                        </div>
+                        <div class="part_g">
+                            <img src="img/galliry_img_15.png" alt="" class="gall_img">
+                            <img src="img/galliry_img_16.png" alt="" class="gall_img">
+                        </div>
+                    </div>
+                </div>
+                <div class="butt_down">	
+                    <div class="arrow arrow-top"></div> 
+                </div>
+                </div>
+            </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="block_6">
+                <div id="container_6" class="container-fluid row gx-0">
+                        <img src="img/cripto_img_1.png" alt="" data-wow-duration = '1.6s' data-wow-delay = "0s" class="cripto_logo galliry_img animate__animated animate__fadeInLeft wow" style = "max-width: 79px; max-height: 90px; margin: 12px auto 0;">
+                        <img src="img/cripto_img_2.png" alt="" data-wow-duration = '1.4s' data-wow-delay = "0.3s" class="cripto_logo galliry_img animate__animated animate__fadeInLeft wow " style = "max-width: 306px; max-height: 116px; margin: 0 auto 0;">
+                        <img src="img/cripto_img_3.png" alt="" data-wow-duration = '1.2s' data-wow-delay = "0.5s" class="cripto_logo galliry_img animate__animated animate__fadeInLeft wow" style = "max-width: 215px; max-height: 116px; margin: 0 auto 0;">
+                        <img src="img/cripto_img_4.png" alt="" data-wow-duration = '1s' data-wow-delay = "0.7s" class="cripto_logo galliry_img animate__animated animate__fadeInLeft wow" style = "max-width: 79px; max-height: 116px; margin: 10px auto 0;">
+                        <img src="img/cripto_img_5.jpg" alt="" data-wow-duration = '0.8s' data-wow-delay = "0.8s" class="cripto_logo galliry_img animate__animated animate__fadeInLeft wow" style = "max-width: 301px; max-height: 50px; margin: 25px auto 0;">
+                </div>
+            </div>
+
+
+
+
+            <div class="block_7 bg-image">
+                <div id="container_7" class="container-fluid bg-image">
+                    <div class="text_stay animate__animated animate__slideInDown wow">Stay in the loop</div>
+                    <div class="text_join animate__animated animate__slideInDown wow">Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks for navigating NFT.Ring</div>
+                    <div class="input_contain animate__animated animate__fadeInUp wow">
+                        <input class="input_block" name="login" type="text" placeholder="Your Email Address">
+                        <button class="input_button">Register</button>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+
+
+            <div class="block_8">
+                <div id="container_8" class="container-fluid row gx-0">
+                    <div class="last_inf_block">
+                        <div class="logo_block">
+                            <div class="img_logo"><a href="" class="img_logo"><img src="img/logo.png" alt=""></a></div>
+                            <div class="text_nft"><a href="" class="text_nft">NFT.Ring</a></div>
+                        </div>
+                    <div class="text_the_words">The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital assets.</div>
+                    </div>
+
+                    <div class="last_contain row gx-0">
+                    <div class="three_last_part">
+                        <div class="heading_text">Marketplace</div>
+                        <div class="main_text"><a class="main_text" href="">All NFTs</a>
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">New</a></div>
+                        <div class="main_text"><a class="main_text" href="">Art</a>
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">Music</a></div>
+                        <div class="main_text"><a class="main_text" href="">Domain Names</a></div>
+                        <div class="main_text"><a class="main_text" href="">Virtual Worlds</a>
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">Trading Cards</a>
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">Collectibles</a>
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">Sports</a></div>
+                        <div class="main_text"><a class="main_text" href="">Utility</a></div>
+                    </div>
+                    <div class="three_last_part">
+                        <div class="heading_text">My Account</div>
+                        <div class="main_text"><a class="main_text" href="">My Profile</a>
+
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">My Collections</a>
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">My Favorites</a>
+
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">My Account Settings</a></div>
+                        <div class="main_text"><a class="main_text" href="">About</a>
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">Careers</a>
+                        </div>
+                    </div>
+                    <div class="three_last_part">
+                        <div class="heading_text">Resources</div>
+                        <div class="main_text"><a class="main_text" href="">Help Center</a>
+
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">Partners</a></div>
+                        <div class="main_text"><a class="main_text" href="">Suggestions</a>
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">Discord Community</a>
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">Blog</a>
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">Docs</a>
+                        </div>
+                        <div class="main_text"><a class="main_text" href="">Newsletter</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+    <script src="anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="sayt_7.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
